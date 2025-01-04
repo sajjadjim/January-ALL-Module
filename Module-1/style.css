@@ -7,3 +7,19 @@
     -o-border-radius:5px;
     margin : 4px;
 }
+.address_body{
+    background-color: rgb(216, 105, 220);
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.address_p{
+    border: 2px solid black;
+    margin: 16px;
+    padding: 2px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 3px 2px 5px green;
+}
