@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px dotted green; */
+        /* color: red; */
+    }
+    .other{
+        display: flex;
+        justify-content:space-around;
+        width: 50%;
+        /* border: 1px solid orange; */
+    }
+    a:hover{
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div>
+       <div class="other"> <a href="">Home</a><a href="">About</a>
+        <a href="">Portfolio</a>
+        <a href="">View</a></div>
+        <a href="">Login</a>
+    </div>
+</body>
+</html>
