@@ -1,0 +1,81 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header, .main, .footer, .nav, .sidebar, .adverdise {
+    background-color: burlywood;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px solid #d90b0b;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 10px;
+    list-style: none;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.adverdise {
+    grid-area: advertise;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav main main sidebar"
+        "nav main main advertise"
+        "footer footer footer footer"
+    ;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        grid-template-areas: "header"
+            "nav"
+            "main"
+            "sidebar"
+            "advertise"
+            "footer";
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:977px) {
+    .container {
+        grid-template-areas: "header header"
+            "nav sidebar"
+            "nav advertise"
+            " main main"
+            "footer footer";
+    }
+
+}
