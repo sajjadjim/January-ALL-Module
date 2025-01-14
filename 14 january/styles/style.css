@@ -1,0 +1,22 @@
+img{
+    height: 100%;
+    width: 100%;
+}
+.row{
+    display: flex;
+    height: 400px;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.row >  div{
+    flex: 1;
+}
+.vertical-view{
+    height: calc((100% - 5px)/2);
+}
+.group_img{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2 ,1fr);
+}
+

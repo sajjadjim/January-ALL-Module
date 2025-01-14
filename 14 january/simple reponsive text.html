@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3 ,1fr);
+        }
+        .card{
+            background-color: green;
+            border-radius: 5px;
+        }
+        .box{
+            display: flex;
+            gap: 5px;
+            margin-top: 10px;
+            /* justify-items: center; */
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+             flex-wrap: wrap;
+        }
+        .box  li{
+            border: 1px solid orange;
+            border-radius:  5px;
+            padding: 3px;
+            list-style: none;
+            height: 30px;
+            width: 60px;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1 , 1fr);
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:756px) {
+            .container{
+                grid-template-columns: repeat(2 , 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Responsive website</h2>
+        <div class="container">
+            <div class="card">
+                <h2>First Card</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae quos dignissimos nesciunt iste amet eaque suscipit sint officia quae.</p>
+            </div>
+            <div class="card">
+                <h2>Second Card</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed saepe omnis ut quas quae cupiditate obcaecati mollitia nobis, dolore tempora.</p>
+            </div>
+            <div class="card">
+                <h2>Third Card</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed saepe omnis ut quas quae cupiditate obcaecati mollitia nobis, dolore tempora.</p>
+            </div>
+            <div class="card">
+                <h2>Fourth Card</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed saepe omnis ut quas quae cupiditate obcaecati mollitia nobis, dolore tempora.</p>
+            </div>
+        </div>
+        <div class="box">
+            <li>child 1</li>
+            <li>child 2</li>
+            <li>child 3</li>
+            <li>child 4</li>
+            <li>child 5</li>
+            <li>child 6</li>
+            <li>child 7</li>
+            <li>child 8</li>
+        </div>
+    </main>
+</body>
+</html>
