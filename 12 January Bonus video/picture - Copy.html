@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .swim-container{
+            border: 2px solid red;
+
+        }
+        .box{
+            border: 2px dotted orange;
+            width: 200px;
+        }
+        .ring{
+             /* comparisiom thats movement another to another place use it  */
+            position: relative;
+             left: 50px;
+            top: 50px; 
+        } 
+        .ring{
+        position: absolute;
+        top: 40px;
+        left: 100px;
+        } 
+         .dummy{
+            border: 2px dotted orange;
+            height: 100px;
+            width: 200px;
+         }
+         .ring{
+            position: sticky;
+             top: 10px; 
+             bottom: 0px; 
+         }
+          .ring{
+            position: fixed;
+            top: 100px;
+          }
+         .another{
+            border: 2px dotted blue;
+         }
+    </style>
+    <title>CSS Position</title>
+</head>
+<body>
+    <main>
+  <h3>CSS Position</h3>
+  <ol>
+    <!-- flow Related  -->
+    <li>Static</li>
+    <li>Relative :<small>Current position er relative change the position how many</small></li>
+    <li>Absolute <small>in comparision will lose it's onw position</small></li>
+    <!-- scroll Related  -->
+    <li>Fixed</li>
+    <li>Sticky</li>
+  </ol>
+
+  <div class="swim-container">
+    <div class="box boy"><img src="swim/boy.svg" alt=""></div>
+    <div class="box ring"><img src="swim/ring.svg" alt=""></div>
+    <div class="box water"><img src="swim/water.svg" alt=""></div>
+
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+  </div>
+  <div class="another">
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+  </div>
+    </main>
+</body>
+</html>

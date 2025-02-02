@@ -1,0 +1,19 @@
+nav > ul > li {
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+    
+}
+/* nav  li > a{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+
+} */
+
+footer{
+    text-align: center;
+    color: red;
+    text-decoration:solid;
+}
